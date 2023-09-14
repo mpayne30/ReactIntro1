@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header';
 import ProjectList from './ProjectList';
+import MyExample from './MaxThompson';
 
 function App() {
   const projects = [
@@ -18,6 +19,9 @@ function App() {
       <ProjectList projects={projects} />
     </div>
   );
+
 }
+
+MyExample();
 
 export default App;

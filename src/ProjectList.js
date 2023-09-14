@@ -1,6 +1,7 @@
 // ProjectList.js
 import React, { useState, useEffect } from 'react';
 //import axios from 'axios'; // Import Axios
+import MyButton from './MyButton.js';
 
 function ProjectList(props) {
   const [projects, setProjects] = useState([]);
@@ -18,7 +19,8 @@ function ProjectList(props) {
 
   return (
     <div>
-      <h2>Projects</h2>
+      <h2>Current Projects</h2>
+      <MyButton />
       <ul>
         {projects.map((project) => (
           <li key={project.id}>{project.name}</li>

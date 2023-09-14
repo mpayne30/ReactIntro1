@@ -1,6 +1,5 @@
 // markPayne.js
 import React from 'react';
-import logoConstruction from './resources/logoConstruction.png';
 
 function MarkPayne() {
 
@@ -14,7 +13,11 @@ function MarkPayne() {
 
     return (
         <div>
-            <MarkPayne projectData={projectData} />
+            <ul>
+                {projectData.map((projectData) => (
+                  <li key={projectData.id}>{projectData.name}</li>
+                ))}
+            </ul>
         </div>
     )
 }

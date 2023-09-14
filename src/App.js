@@ -22,6 +22,6 @@ function App() {
 
 }
 
-MyExample();
+
 
 export default App;
